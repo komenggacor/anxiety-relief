@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Anxiety Relief Tool')</title>
-    <link rel="stylesheet" href="{{ asset('style.css') }}">
-    <link rel="stylesheet" href="{{ asset('video-fix.css') }}">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/video-fix.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -50,7 +50,7 @@
             /* Foto ruang operasi + overlay gradient lembut, tetap terang demi keterbacaan */
             background-image:
                 linear-gradient(160deg, rgba(254, 253, 251, 0.92) 0%, rgba(246, 247, 244, 0.92) 40%, rgba(232, 235, 228, 0.94) 100%),
-                url('{{ asset('assets/images/operating-room.jpg') }}');
+                url('/assets/images/operating-room.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -430,7 +430,7 @@
 </head>
 <body>
     @yield('content')
-    <script src="{{ asset('script.js') }}"></script>
+    <script src="/script.js"></script>
     @yield('scripts')
 </body>
 </html>

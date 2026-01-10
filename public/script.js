@@ -203,7 +203,16 @@ class UIManager {
 		this.setupHeaderScroll();
 	}
 
-	setupAudioManager() { this.audioManager = new AudioManager(); }
+	setupAudioManager() {
+		// Audio feature intentionally disabled (per product requirement).
+		// Keep a no-op manager so existing buttons don't throw errors.
+		this.audioManager = {
+			togglePlay() {},
+			toggleMute() {},
+			changeVolume() {},
+			nextTrack() {},
+		};
+	}
 
 	setupMobileMenu() {
 		const menuBtn = document.getElementById('mobileMenuBtn');
