@@ -1,10 +1,10 @@
 <!-- Subtle Background Gradient Orbs (tanpa pola titik) -->
 <div class="fixed inset-0 pointer-events-none z-0">
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <div class="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-br from-sage-300/20 to-transparent rounded-full blur-3xl"></div>
-        <div class="absolute top-1/4 right-0 w-80 h-80 bg-gradient-to-bl from-teal-200/15 to-transparent rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-to-tr from-sage-200/20 to-transparent rounded-full blur-3xl"></div>
-        <div class="absolute bottom-1/3 right-1/4 w-64 h-64 bg-gradient-to-tl from-cream-200/30 to-transparent rounded-full blur-2xl animate-breathe"></div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-linear-to-br from-sage-300/20 to-transparent rounded-full blur-3xl"></div>
+        <div class="absolute top-1/4 right-0 w-80 h-80 bg-linear-to-bl from-teal-200/15 to-transparent rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-linear-to-tr from-sage-200/20 to-transparent rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-64 h-64 bg-linear-to-tl from-cream-200/30 to-transparent rounded-full blur-2xl animate-breathe"></div>
     </div>
 </div>
 
@@ -16,10 +16,10 @@
                 <!-- Logo with hover animation -->
                 <a href="{{ url('/') }}" class="flex items-center gap-3 group">
                     <div class="relative">
-                        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-sage-400 via-sage-500 to-sage-600 flex items-center justify-center shadow-lg shadow-sage-500/20 group-hover:shadow-sage-500/40 transition-all duration-500 group-hover:scale-105">
+                        <div class="w-11 h-11 rounded-xl bg-linear-to-br from-sage-400 via-sage-500 to-sage-600 flex items-center justify-center shadow-lg shadow-sage-500/20 group-hover:shadow-sage-500/40 transition-all duration-500 group-hover:scale-105">
                             <i class="fas fa-leaf text-white text-lg group-hover:rotate-12 transition-transform duration-300"></i>
                         </div>
-                        <div class="absolute -inset-1 bg-gradient-to-br from-sage-400 to-sage-600 rounded-xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+                        <div class="absolute -inset-1 bg-linear-to-br from-sage-400 to-sage-600 rounded-xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
                     </div>
                     <div>
                         <h1 class="text-lg font-semibold text-stone-800 group-hover:text-sage-700 transition-colors">Anxiety Relief</h1>
@@ -72,14 +72,14 @@
     <!-- ==================== HERO SECTION ==================== -->
     <section id="home" class="min-h-screen flex items-center pt-28 pb-16 overflow-hidden relative">
         <!-- Hero dark overlay for readability over photo -->
-        <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/60 to-black/70 pointer-events-none z-0"></div>
+        <div class="absolute inset-0 bg-linear-to-b from-black/55 via-black/60 to-black/70 pointer-events-none z-0"></div>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
             <div class="relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center text-white">
 
                 <!-- Hero Content -->
                 <div class="order-2 lg:order-1">
                     <!-- Badge -->
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-sage-100 to-sage-50 border border-sage-200/50 text-sage-700 text-sm font-medium mb-6 animate-fade-in-up shadow-sm">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-linear-to-r from-sage-100 to-sage-50 border border-sage-200/50 text-sage-700 text-sm font-medium mb-6 animate-fade-in-up shadow-sm">
                         <span class="relative flex h-2 w-2">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-sage-500"></span>
@@ -122,12 +122,12 @@
                             <div class="text-2xl sm:text-3xl font-serif font-bold text-white">4+</div>
                             <div class="text-xs sm:text-sm text-stone-200">Teknik Relaksasi</div>
                         </div>
-                        <div class="w-px h-12 bg-gradient-to-b from-transparent via-stone-200 to-transparent hidden sm:block"></div>
+                        <div class="w-px h-12 bg-linear-to-b from-transparent via-stone-200 to-transparent hidden sm:block"></div>
                         <div class="stat-item">
                             <div class="text-2xl sm:text-3xl font-serif font-bold text-white">100%</div>
                             <div class="text-xs sm:text-sm text-stone-200">Aman & Non-Medis</div>
                         </div>
-                        <div class="w-px h-12 bg-gradient-to-b from-transparent via-stone-200 to-transparent hidden sm:block"></div>
+                        <div class="w-px h-12 bg-linear-to-b from-transparent via-stone-200 to-transparent hidden sm:block"></div>
                         <div class="stat-item">
                             <div class="text-2xl sm:text-3xl font-serif font-bold text-sage-200">Gratis</div>
                             <div class="text-xs sm:text-sm text-stone-200">Selamanya</div>
@@ -141,7 +141,7 @@
 
                         <!-- Main Card -->
                         <div class="glass-card-strong rounded-3xl p-6 sm:p-8 shadow-2xl shadow-sage-500/10 border border-white/50">
-                            <div class="aspect-square rounded-2xl bg-gradient-to-br from-sage-50 via-cream-50 to-sage-100 flex items-center justify-center relative overflow-hidden">
+                            <div class="aspect-square rounded-2xl bg-linear-to-br from-sage-50 via-cream-50 to-sage-100 flex items-center justify-center relative overflow-hidden">
                                 <!-- Animated breathing circles -->
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <div class="w-52 h-52 rounded-full border-2 border-sage-200/40 animate-breathe"></div>
@@ -150,7 +150,7 @@
                                     <div class="w-40 h-40 rounded-full border-2 border-sage-300/30 animate-breathe" style="animation-delay: 0.5s;"></div>
                                 </div>
                                 <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="w-28 h-28 rounded-full bg-gradient-to-br from-sage-100 to-sage-200/50 animate-breathe" style="animation-delay: 1s;"></div>
+                                    <div class="w-28 h-28 rounded-full bg-linear-to-br from-sage-100 to-sage-200/50 animate-breathe" style="animation-delay: 1s;"></div>
                                 </div>
 
                                 <!-- Center Icon -->
@@ -171,7 +171,7 @@
                         <!-- Floating Feature Cards -->
                         <div class="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 glass-card-strong rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-lg border border-white/50 animate-float z-20">
                             <div class="flex items-center gap-2 sm:gap-3">
-                                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-br from-sage-400 to-sage-500 flex items-center justify-center shadow-md">
+                                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-linear-to-br from-sage-400 to-sage-500 flex items-center justify-center shadow-md">
                                     <i class="fas fa-music text-white text-xs sm:text-sm"></i>
                                 </div>
                                 <div class="hidden sm:block">
@@ -183,7 +183,7 @@
 
                         <div class="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 glass-card-strong rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-lg border border-white/50 animate-float z-20" style="animation-delay: 1s;">
                             <div class="flex items-center gap-2 sm:gap-3">
-                                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-md">
+                                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-linear-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-md">
                                     <i class="fas fa-wind text-white text-xs sm:text-sm"></i>
                                 </div>
                                 <div class="hidden sm:block">
@@ -194,8 +194,8 @@
                         </div>
 
                         <!-- Decorative element -->
-                        <div class="absolute top-1/2 -right-8 sm:-right-12 w-24 h-24 bg-gradient-to-br from-sage-200/40 to-transparent rounded-full blur-2xl -z-10"></div>
-                        <div class="absolute -bottom-8 left-1/4 w-32 h-32 bg-gradient-to-tr from-teal-200/30 to-transparent rounded-full blur-2xl -z-10"></div>
+                        <div class="absolute top-1/2 -right-8 sm:-right-12 w-24 h-24 bg-linear-to-br from-sage-200/40 to-transparent rounded-full blur-2xl -z-10"></div>
+                        <div class="absolute -bottom-8 left-1/4 w-32 h-32 bg-linear-to-tr from-teal-200/30 to-transparent rounded-full blur-2xl -z-10"></div>
                     </div>
                 </div>
             </div>
@@ -214,28 +214,28 @@
             <div class="glass-card rounded-2xl p-6 sm:p-8 shadow-soft border border-white/40 bg-white/95">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                     <div class="text-center group">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-sage-100 to-sage-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-linear-to-br from-sage-100 to-sage-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-shield-check text-sage-500 text-lg"></i>
                         </div>
                         <h4 class="font-semibold text-stone-700 text-sm">100% Aman</h4>
                         <p class="text-xs text-stone-400 mt-0.5">Tanpa Efek Samping</p>
                     </div>
                     <div class="text-center group">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-teal-100 to-teal-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-linear-to-br from-teal-100 to-teal-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-microscope text-teal-500 text-lg"></i>
                         </div>
                         <h4 class="font-semibold text-stone-700 text-sm">Berbasis Riset</h4>
                         <p class="text-xs text-stone-400 mt-0.5">Metode Terbukti</p>
                     </div>
                     <div class="text-center group">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-linear-to-br from-purple-100 to-purple-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-clock text-purple-500 text-lg"></i>
                         </div>
                         <h4 class="font-semibold text-stone-700 text-sm">Akses 24/7</h4>
                         <p class="text-xs text-stone-400 mt-0.5">Kapan Saja</p>
                     </div>
                     <div class="text-center group">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-linear-to-br from-amber-100 to-amber-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-heart text-amber-500 text-lg"></i>
                         </div>
                         <h4 class="font-semibold text-stone-700 text-sm">Mudah Digunakan</h4>
@@ -249,7 +249,7 @@
     <!-- ==================== ABOUT SECTION ==================== -->
     <section id="about" class="py-20 relative">
         <!-- Section Divider -->
-        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sage-200 to-transparent"></div>
+        <div class="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-sage-200 to-transparent"></div>
 
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
@@ -270,7 +270,7 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-12">
                 <!-- Card 1 -->
                 <div class="feature-card group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-sage-400 to-sage-500 flex items-center justify-center mb-5 shadow-lg shadow-sage-500/20 group-hover:shadow-sage-500/30 group-hover:scale-105 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-linear-to-br from-sage-400 to-sage-500 flex items-center justify-center mb-5 shadow-lg shadow-sage-500/20 group-hover:shadow-sage-500/30 group-hover:scale-105 transition-all duration-300">
                         <i class="fas fa-flask text-white text-xl"></i>
                     </div>
                     <h3 class="text-lg font-semibold text-stone-800 mb-2">Berbasis Penelitian</h3>
@@ -279,7 +279,7 @@
 
                 <!-- Card 2 -->
                 <div class="feature-card group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center mb-5 shadow-lg shadow-teal-500/20 group-hover:shadow-teal-500/30 group-hover:scale-105 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-linear-to-br from-teal-400 to-teal-500 flex items-center justify-center mb-5 shadow-lg shadow-teal-500/20 group-hover:shadow-teal-500/30 group-hover:scale-105 transition-all duration-300">
                         <i class="fas fa-hand-holding-heart text-white text-xl"></i>
                     </div>
                     <h3 class="text-lg font-semibold text-stone-800 mb-2">Mudah Diakses</h3>
@@ -288,7 +288,7 @@
 
                 <!-- Card 3 -->
                 <div class="feature-card group sm:col-span-2 lg:col-span-1">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-500 flex items-center justify-center mb-5 shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/30 group-hover:scale-105 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-linear-to-br from-purple-400 to-purple-500 flex items-center justify-center mb-5 shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/30 group-hover:scale-105 transition-all duration-300">
                         <i class="fas fa-shield-alt text-white text-xl"></i>
                     </div>
                     <h3 class="text-lg font-semibold text-stone-800 mb-2">Aman & Netral</h3>
@@ -297,9 +297,9 @@
             </div>
 
             <!-- Disclaimer -->
-            <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-amber-400 bg-gradient-to-r from-amber-50/80 to-cream-50/50">
+            <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-amber-400 bg-linear-to-r from-amber-50/80 to-cream-50/50">
                 <div class="flex items-start gap-4">
-                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
                         <i class="fas fa-exclamation-triangle text-amber-500"></i>
                     </div>
                     <div>
@@ -316,7 +316,7 @@
     <!-- ==================== FEATURES SECTION ==================== -->
     <section id="features" class="py-20 relative">
         <!-- Background accent -->
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-sage-50/30 to-transparent -z-10"></div>
+        <div class="absolute inset-0 bg-linear-to-b from-transparent via-sage-50/30 to-transparent -z-10"></div>
 
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
@@ -338,8 +338,8 @@
                 <!-- Musik Relaksasi -->
                 <a href="{{ url('/musik') }}" class="group block">
                     <div class="feature-card-interactive h-full">
-                        <div class="relative aspect-[4/3] rounded-xl bg-gradient-to-br from-sage-100 via-sage-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-t from-sage-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative aspect-4/3 rounded-xl bg-linear-to-br from-sage-100 via-sage-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
+                            <div class="absolute inset-0 bg-linear-to-t from-sage-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <i class="fas fa-headphones text-sage-400 text-4xl group-hover:scale-110 group-hover:text-sage-500 transition-all duration-300 relative z-10"></i>
                             <!-- Decorative circles -->
                             <div class="absolute top-2 right-2 w-8 h-8 rounded-full bg-sage-200/50 blur-sm"></div>
@@ -350,7 +350,7 @@
                                 <h3 class="text-base font-semibold text-stone-800 mb-1 group-hover:text-sage-700 transition-colors">Musik Relaksasi</h3>
                                 <p class="text-stone-400 text-xs leading-relaxed">Alunan musik dengan frekuensi menenangkan</p>
                             </div>
-                            <div class="w-8 h-8 rounded-lg bg-sage-100 flex items-center justify-center flex-shrink-0 group-hover:bg-sage-500 transition-colors duration-300">
+                            <div class="w-8 h-8 rounded-lg bg-sage-100 flex items-center justify-center shrink-0 group-hover:bg-sage-500 transition-colors duration-300">
                                 <i class="fas fa-arrow-right text-sage-500 text-xs group-hover:text-white group-hover:translate-x-0.5 transition-all"></i>
                             </div>
                         </div>
@@ -360,8 +360,8 @@
                 <!-- Pernapasan 4-7-8 -->
                 <a href="{{ url('/pernapasan') }}" class="group block">
                     <div class="feature-card-interactive h-full">
-                        <div class="relative aspect-[4/3] rounded-xl bg-gradient-to-br from-teal-100 via-teal-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-t from-teal-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative aspect-4/3 rounded-xl bg-linear-to-br from-teal-100 via-teal-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
+                            <div class="absolute inset-0 bg-linear-to-t from-teal-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <i class="fas fa-wind text-teal-400 text-4xl group-hover:scale-110 group-hover:text-teal-500 transition-all duration-300 relative z-10"></i>
                             <div class="absolute top-2 right-2 w-8 h-8 rounded-full bg-teal-200/50 blur-sm"></div>
                             <div class="absolute bottom-4 left-3 w-6 h-6 rounded-full bg-teal-300/30 blur-sm"></div>
@@ -371,7 +371,7 @@
                                 <h3 class="text-base font-semibold text-stone-800 mb-1 group-hover:text-teal-700 transition-colors">Pernapasan 4-7-8</h3>
                                 <p class="text-stone-400 text-xs leading-relaxed">Teknik untuk menenangkan sistem saraf</p>
                             </div>
-                            <div class="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center flex-shrink-0 group-hover:bg-teal-500 transition-colors duration-300">
+                            <div class="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center shrink-0 group-hover:bg-teal-500 transition-colors duration-300">
                                 <i class="fas fa-arrow-right text-teal-500 text-xs group-hover:text-white group-hover:translate-x-0.5 transition-all"></i>
                             </div>
                         </div>
@@ -381,8 +381,8 @@
                 <!-- Mindfulness -->
                 <a href="{{ url('/mindfulness') }}" class="group block">
                     <div class="feature-card-interactive h-full">
-                        <div class="relative aspect-[4/3] rounded-xl bg-gradient-to-br from-purple-100 via-purple-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-t from-purple-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative aspect-4/3 rounded-xl bg-linear-to-br from-purple-100 via-purple-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
+                            <div class="absolute inset-0 bg-linear-to-t from-purple-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <i class="fas fa-brain text-purple-400 text-4xl group-hover:scale-110 group-hover:text-purple-500 transition-all duration-300 relative z-10"></i>
                             <div class="absolute top-2 right-2 w-8 h-8 rounded-full bg-purple-200/50 blur-sm"></div>
                             <div class="absolute bottom-4 left-3 w-6 h-6 rounded-full bg-purple-300/30 blur-sm"></div>
@@ -392,7 +392,7 @@
                                 <h3 class="text-base font-semibold text-stone-800 mb-1 group-hover:text-purple-700 transition-colors">Mindfulness</h3>
                                 <p class="text-stone-400 text-xs leading-relaxed">Panduan untuk meningkatkan kesadaran</p>
                             </div>
-                            <div class="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0 group-hover:bg-purple-500 transition-colors duration-300">
+                            <div class="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center shrink-0 group-hover:bg-purple-500 transition-colors duration-300">
                                 <i class="fas fa-arrow-right text-purple-500 text-xs group-hover:text-white group-hover:translate-x-0.5 transition-all"></i>
                             </div>
                         </div>
@@ -402,8 +402,8 @@
                 <!-- Visual Relaksasi -->
                 <a href="{{ url('/visual') }}" class="group block">
                     <div class="feature-card-interactive h-full">
-                        <div class="relative aspect-[4/3] rounded-xl bg-gradient-to-br from-amber-100 via-amber-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-t from-amber-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative aspect-4/3 rounded-xl bg-linear-to-br from-amber-100 via-amber-50 to-cream-50 flex items-center justify-center mb-5 overflow-hidden">
+                            <div class="absolute inset-0 bg-linear-to-t from-amber-200/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <i class="fas fa-mountain-sun text-amber-400 text-4xl group-hover:scale-110 group-hover:text-amber-500 transition-all duration-300 relative z-10"></i>
                             <div class="absolute top-2 right-2 w-8 h-8 rounded-full bg-amber-200/50 blur-sm"></div>
                             <div class="absolute bottom-4 left-3 w-6 h-6 rounded-full bg-amber-300/30 blur-sm"></div>
@@ -413,7 +413,7 @@
                                 <h3 class="text-base font-semibold text-stone-800 mb-1 group-hover:text-amber-700 transition-colors">Visual Relaksasi</h3>
                                 <p class="text-stone-400 text-xs leading-relaxed">Visualisasi alam yang menenangkan</p>
                             </div>
-                            <div class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-500 transition-colors duration-300">
+                            <div class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center shrink-0 group-hover:bg-amber-500 transition-colors duration-300">
                                 <i class="fas fa-arrow-right text-amber-500 text-xs group-hover:text-white group-hover:translate-x-0.5 transition-all"></i>
                             </div>
                         </div>
@@ -443,11 +443,11 @@
             <!-- Steps -->
             <div class="grid md:grid-cols-3 gap-6 relative">
                 <!-- Connection Line (desktop) -->
-                <div class="hidden md:block absolute top-20 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-sage-200 via-teal-200 to-sage-200"></div>
+                <div class="hidden md:block absolute top-20 left-[20%] right-[20%] h-0.5 bg-linear-to-r from-sage-200 via-teal-200 to-sage-200"></div>
 
                 <!-- Step 1 -->
                 <div class="relative text-center group">
-                    <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-sage-400 to-sage-500 flex items-center justify-center shadow-xl shadow-sage-500/20 group-hover:shadow-sage-500/30 group-hover:scale-105 transition-all duration-300 relative z-10">
+                    <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-linear-to-br from-sage-400 to-sage-500 flex items-center justify-center shadow-xl shadow-sage-500/20 group-hover:shadow-sage-500/30 group-hover:scale-105 transition-all duration-300 relative z-10">
                         <span class="text-white text-xl font-bold">1</span>
                     </div>
                     <h3 class="text-lg font-semibold text-stone-800 mb-2">Pilih Teknik</h3>
@@ -456,7 +456,7 @@
 
                 <!-- Step 2 -->
                 <div class="relative text-center group">
-                    <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-xl shadow-teal-500/20 group-hover:shadow-teal-500/30 group-hover:scale-105 transition-all duration-300 relative z-10">
+                    <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-linear-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-xl shadow-teal-500/20 group-hover:shadow-teal-500/30 group-hover:scale-105 transition-all duration-300 relative z-10">
                         <span class="text-white text-xl font-bold">2</span>
                     </div>
                     <h3 class="text-lg font-semibold text-stone-800 mb-2">Ikuti Panduan</h3>
@@ -465,7 +465,7 @@
 
                 <!-- Step 3 -->
                 <div class="relative text-center group">
-                    <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-500 flex items-center justify-center shadow-xl shadow-purple-500/20 group-hover:shadow-purple-500/30 group-hover:scale-105 transition-all duration-300 relative z-10">
+                    <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-linear-to-br from-purple-400 to-purple-500 flex items-center justify-center shadow-xl shadow-purple-500/20 group-hover:shadow-purple-500/30 group-hover:scale-105 transition-all duration-300 relative z-10">
                         <span class="text-white text-xl font-bold">3</span>
                     </div>
                     <h3 class="text-lg font-semibold text-stone-800 mb-2">Rasakan Manfaat</h3>
@@ -478,7 +478,7 @@
     <!-- ==================== BENEFITS SECTION ==================== -->
     <section id="benefits" class="py-20 relative">
         <!-- Background accent -->
-        <div class="absolute inset-0 bg-gradient-to-b from-sage-50/30 via-transparent to-sage-50/20 -z-10"></div>
+        <div class="absolute inset-0 bg-linear-to-b from-sage-50/30 via-transparent to-sage-50/20 -z-10"></div>
 
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -499,7 +499,7 @@
                     <div class="space-y-4">
                         <!-- Benefit 1 -->
                         <div class="benefit-item group">
-                            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-sage-100 to-sage-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                            <div class="w-11 h-11 rounded-xl bg-linear-to-br from-sage-100 to-sage-50 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                                 <i class="fas fa-heart text-sage-500"></i>
                             </div>
                             <div>
@@ -510,7 +510,7 @@
 
                         <!-- Benefit 2 -->
                         <div class="benefit-item group">
-                            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-teal-100 to-teal-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                            <div class="w-11 h-11 rounded-xl bg-linear-to-br from-teal-100 to-teal-50 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                                 <i class="fas fa-lungs text-teal-500"></i>
                             </div>
                             <div>
@@ -521,7 +521,7 @@
 
                         <!-- Benefit 3 -->
                         <div class="benefit-item group">
-                            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                            <div class="w-11 h-11 rounded-xl bg-linear-to-br from-purple-100 to-purple-50 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                                 <i class="fas fa-brain text-purple-500"></i>
                             </div>
                             <div>
@@ -532,7 +532,7 @@
 
                         <!-- Benefit 4 -->
                         <div class="benefit-item group">
-                            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                            <div class="w-11 h-11 rounded-xl bg-linear-to-br from-amber-100 to-amber-50 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                                 <i class="fas fa-moon text-amber-500"></i>
                             </div>
                             <div>
@@ -558,7 +558,7 @@
                                 <span class="text-sm font-bold text-sage-600">85%</span>
                             </div>
                             <div class="h-2.5 bg-stone-100 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-sage-400 to-sage-500 rounded-full progress-bar" style="width: 85%"></div>
+                                <div class="h-full bg-linear-to-r from-sage-400 to-sage-500 rounded-full progress-bar" style="width: 85%"></div>
                             </div>
                         </div>
 
@@ -569,7 +569,7 @@
                                 <span class="text-sm font-bold text-teal-600">90%</span>
                             </div>
                             <div class="h-2.5 bg-stone-100 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-teal-400 to-teal-500 rounded-full progress-bar" style="width: 90%"></div>
+                                <div class="h-full bg-linear-to-r from-teal-400 to-teal-500 rounded-full progress-bar" style="width: 90%"></div>
                             </div>
                         </div>
 
@@ -580,7 +580,7 @@
                                 <span class="text-sm font-bold text-purple-600">75%</span>
                             </div>
                             <div class="h-2.5 bg-stone-100 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-400 to-purple-500 rounded-full progress-bar" style="width: 75%"></div>
+                                <div class="h-full bg-linear-to-r from-purple-400 to-purple-500 rounded-full progress-bar" style="width: 75%"></div>
                             </div>
                         </div>
 
@@ -591,15 +591,15 @@
                                 <span class="text-sm font-bold text-amber-600">80%</span>
                             </div>
                             <div class="h-2.5 bg-stone-100 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-amber-400 to-amber-500 rounded-full progress-bar" style="width: 80%"></div>
+                                <div class="h-full bg-linear-to-r from-amber-400 to-amber-500 rounded-full progress-bar" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tip Box -->
-                    <div class="mt-6 p-4 rounded-xl bg-gradient-to-r from-sage-50 to-cream-50 border border-sage-100">
+                    <div class="mt-6 p-4 rounded-xl bg-linear-to-r from-sage-50 to-cream-50 border border-sage-100">
                         <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 rounded-lg bg-sage-100 flex items-center justify-center flex-shrink-0">
+                            <div class="w-8 h-8 rounded-lg bg-sage-100 flex items-center justify-center shrink-0">
                                 <i class="fas fa-lightbulb text-sage-500 text-sm"></i>
                             </div>
                             <div>
@@ -618,11 +618,11 @@
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <div class="relative glass-card-strong rounded-3xl p-8 sm:p-12 text-center shadow-2xl shadow-sage-500/10 border border-white/50 overflow-hidden">
                 <!-- Background decorations -->
-                <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sage-200/30 to-transparent rounded-full blur-2xl"></div>
-                <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-full blur-2xl"></div>
+                <div class="absolute top-0 right-0 w-40 h-40 bg-linear-to-bl from-sage-200/30 to-transparent rounded-full blur-2xl"></div>
+                <div class="absolute bottom-0 left-0 w-40 h-40 bg-linear-to-tr from-teal-200/20 to-transparent rounded-full blur-2xl"></div>
 
                 <div class="relative z-10">
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-sage-400 to-sage-500 flex items-center justify-center shadow-xl shadow-sage-500/20">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-linear-to-br from-sage-400 to-sage-500 flex items-center justify-center shadow-xl shadow-sage-500/20">
                         <i class="fas fa-spa text-white text-2xl"></i>
                     </div>
 
@@ -650,12 +650,12 @@
 </main>
 
 <!-- ==================== FOOTER ==================== -->
-<footer class="py-10 border-t border-sage-100 relative z-10 bg-gradient-to-b from-transparent to-cream-50/50">
+<footer class="py-10 border-t border-sage-100 relative z-10 bg-linear-to-b from-transparent to-cream-50/50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
             <!-- Logo -->
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sage-400 to-sage-600 flex items-center justify-center shadow-md">
+                <div class="w-10 h-10 rounded-xl bg-linear-to-br from-sage-400 to-sage-600 flex items-center justify-center shadow-md">
                     <i class="fas fa-leaf text-white"></i>
                 </div>
                 <div>

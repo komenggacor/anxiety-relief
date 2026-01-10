@@ -15,7 +15,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         // Vercel runs behind a proxy; trust forwarded headers so Laravel
         // correctly detects HTTPS and generates https:// asset URLs.
-        $middleware->trustProxies(at: '*', headers: Request::HEADER_X_FORWARDED_ALL);
+        $middleware->trustProxies(at: '*');
 
         $middleware->alias([
             'admin.auth' => AdminAuthenticate::class,

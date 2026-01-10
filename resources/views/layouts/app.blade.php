@@ -70,10 +70,14 @@
 
         .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
 
-        /* Gradient Utilities */
-        .bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); }
-        .bg-gradient-to-tl { background-image: linear-gradient(to top left, var(--tw-gradient-stops)); }
-        .bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+        /* Gradient Utilities (Tailwind v4 preferred names) */
+        .bg-linear-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); }
+        .bg-linear-to-tl { background-image: linear-gradient(to top left, var(--tw-gradient-stops)); }
+        .bg-linear-to-tr { background-image: linear-gradient(to top right, var(--tw-gradient-stops)); }
+        .bg-linear-to-bl { background-image: linear-gradient(to bottom left, var(--tw-gradient-stops)); }
+        .bg-linear-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+        .bg-linear-to-b { background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); }
+        .bg-linear-to-t { background-image: linear-gradient(to top, var(--tw-gradient-stops)); }
 
         .from-sage-50 { --tw-gradient-from: var(--sage-50); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
         .from-sage-100 { --tw-gradient-from: var(--sage-100); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }

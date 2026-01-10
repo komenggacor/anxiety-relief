@@ -5,8 +5,8 @@
 @section('content')
 <!-- Floating Decorative Elements -->
 <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
-    <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-amber-200/30 to-transparent rounded-full blur-3xl animate-pulse-soft"></div>
-    <div class="absolute bottom-40 right-10 w-96 h-96 bg-gradient-to-tl from-amber-100/40 to-transparent rounded-full blur-3xl animate-pulse-soft"></div>
+    <div class="absolute top-20 left-10 w-72 h-72 bg-linear-to-br from-amber-200/30 to-transparent rounded-full blur-3xl animate-pulse-soft"></div>
+    <div class="absolute bottom-40 right-10 w-96 h-96 bg-linear-to-tl from-amber-100/40 to-transparent rounded-full blur-3xl animate-pulse-soft"></div>
 </div>
 
 <!-- Back Navigation -->
@@ -15,7 +15,7 @@
         <div class="glass-card rounded-2xl px-6 py-4 shadow-soft">
             <div class="flex justify-between items-center">
                 <a href="{{ url('/') }}" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-sage-400 to-sage-600 flex items-center justify-center shadow-soft group-hover:shadow-glow-sage transition-all duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-linear-to-br from-sage-400 to-sage-600 flex items-center justify-center shadow-soft group-hover:shadow-glow-sage transition-all duration-300">
                         <i class="fas fa-leaf text-white text-lg"></i>
                     </div>
                     <div>
@@ -37,7 +37,7 @@
     <div class="mx-auto max-w-4xl px-6 lg:px-8 w-full">
         <div class="glass-card rounded-3xl p-8 md:p-12 shadow-elevated animate-fade-in-up">
             <!-- Icon -->
-            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center mx-auto mb-8 shadow-soft">
+            <div class="w-20 h-20 rounded-2xl bg-linear-to-br from-amber-400 to-amber-600 flex items-center justify-center mx-auto mb-8 shadow-soft">
                 <i class="fas fa-mountain-sun text-white text-3xl"></i>
             </div>
 
@@ -63,14 +63,14 @@
             <div class="grid md:grid-cols-3 gap-4 mb-10">
                 @if($pageData && $pageData->benefit_1)
                 <div class="flex items-center gap-3 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
                         <i class="fas fa-check-circle text-amber-600"></i>
                     </div>
                     <span class="text-stone-600 text-sm">{{ $pageData->benefit_1 }}</span>
                 </div>
                 @else
                 <div class="flex items-center gap-3 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
                         <i class="fas fa-check-circle text-amber-600"></i>
                     </div>
                     <span class="text-stone-600 text-sm">Mengurangi stres visual</span>
@@ -79,14 +79,14 @@
 
                 @if($pageData && $pageData->benefit_2)
                 <div class="flex items-center gap-3 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
                         <i class="fas fa-check-circle text-amber-600"></i>
                     </div>
                     <span class="text-stone-600 text-sm">{{ $pageData->benefit_2 }}</span>
                 </div>
                 @else
                 <div class="flex items-center gap-3 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
                         <i class="fas fa-check-circle text-amber-600"></i>
                     </div>
                     <span class="text-stone-600 text-sm">Menenangkan pikiran</span>
@@ -95,14 +95,14 @@
 
                 @if($pageData && $pageData->benefit_3)
                 <div class="flex items-center gap-3 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
                         <i class="fas fa-check-circle text-amber-600"></i>
                     </div>
                     <span class="text-stone-600 text-sm">{{ $pageData->benefit_3 }}</span>
                 </div>
                 @else
                 <div class="flex items-center gap-3 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
                         <i class="fas fa-check-circle text-amber-600"></i>
                     </div>
                     <span class="text-stone-600 text-sm">Relaksasi alami</span>
@@ -112,7 +112,7 @@
 
             @if (!empty($youtubeUrl))
                 <!-- YouTube Video -->
-                <div class="bg-gradient-to-br from-amber-50 to-cream-50 rounded-2xl p-6 border border-amber-100 mb-8">
+                <div class="bg-linear-to-br from-amber-50 to-cream-50 rounded-2xl p-6 border border-amber-100 mb-8">
                     <h3 class="font-semibold text-stone-800 mb-3 text-center">Video Visual Relaksasi (YouTube)</h3>
                     <div class="aspect-video rounded-2xl overflow-hidden shadow-soft border border-amber-100 bg-black/80">
                         @php
@@ -133,8 +133,8 @@
             @endif
 
             <!-- Visual Display -->
-            <div class="bg-gradient-to-br from-amber-50 to-cream-50 rounded-2xl p-6 border border-amber-100 mb-6">
-                <div class="relative aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-amber-100 via-sage-50 to-teal-100 flex items-center justify-center">
+            <div class="bg-linear-to-br from-amber-50 to-cream-50 rounded-2xl p-6 border border-amber-100 mb-6">
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-linear-to-br from-amber-100 via-sage-50 to-teal-100 flex items-center justify-center">
                     <!-- Animated Nature Scene -->
                     <div class="absolute inset-0 flex items-center justify-center">
                         <!-- Sun -->

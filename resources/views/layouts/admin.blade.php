@@ -119,7 +119,7 @@
         <!-- Sidebar -->
         <aside class="w-64 bg-white border-r border-gray-200 flex flex-col shadow-lg">
             <!-- Logo / Brand -->
-            <div class="h-16 flex items-center px-6 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-indigo-50">
+            <div class="h-16 flex items-center px-6 border-b border-gray-200 bg-linear-to-r from-blue-50 to-indigo-50">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-lg gradient-blue flex items-center justify-center shadow-md">
                         <i class="fas fa-spa text-white text-lg"></i>
@@ -173,7 +173,7 @@
             <!-- User / Logout Section -->
             <div class="px-4 py-4 border-t border-gray-200 bg-gray-50">
                 <div class="flex items-center gap-3 mb-3 px-2">
-                    <div class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-white font-semibold text-sm shadow-md">
+                    <div class="w-9 h-9 rounded-full bg-linear-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-white font-semibold text-sm shadow-md">
                         <i class="fas fa-user-shield"></i>
                     </div>
                     <div class="flex-1 min-w-0">

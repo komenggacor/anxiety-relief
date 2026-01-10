@@ -18,10 +18,10 @@ class DatabaseSeeder extends Seeder
     {
         // Admin default untuk mengelola laman relaxation
         User::updateOrCreate(
-            ['email' => 'admin@gmail.com'],
+            ['email' => env('ADMIN_EMAIL', 'admin@gmail.com')],
             [
                 'name' => 'Admin',
-                'password' => 'admin123', // akan di-hash otomatis oleh cast model User
+                'password' => env('ADMIN_PASSWORD', 'admin123'), // akan di-hash otomatis oleh cast model User
             ]
         );
 

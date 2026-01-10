@@ -19,7 +19,7 @@
 
 @if (session('status'))
     <div class="mb-6 rounded-xl border border-green-200 bg-green-50 px-6 py-4 flex items-start gap-4 shadow-sm animate-fade-in">
-        <div class="w-10 h-10 rounded-lg bg-green-500 flex items-center justify-center flex-shrink-0">
+        <div class="w-10 h-10 rounded-lg bg-green-500 flex items-center justify-center shrink-0">
             <i class="fas fa-check-circle text-white text-lg"></i>
         </div>
         <div class="flex-1">
@@ -30,7 +30,7 @@
 @endif
 
 <!-- Page Info Card -->
-<div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl shadow-lg p-6 mb-8 text-white">
+<div class="bg-linear-to-r from-blue-500 to-indigo-600 rounded-2xl shadow-lg p-6 mb-8 text-white">
     <div class="flex items-center justify-between">
         <div>
             <p class="text-xs font-medium text-blue-100 uppercase tracking-wider mb-2">Edit Halaman</p>
@@ -239,7 +239,7 @@
                         <!-- Help Text -->
                         <div class="mt-3 bg-blue-50 border border-blue-100 rounded-lg p-4">
                             <div class="flex items-start gap-3">
-                                <div class="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0">
+                                <div class="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center shrink-0">
                                     <i class="fas fa-info-circle text-white text-sm"></i>
                                 </div>
                                 <div class="flex-1">
@@ -272,7 +272,7 @@
                             </h4>
                             <div class="bg-gray-100 rounded-xl p-4">
                                 <div class="flex items-start gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center shrink-0">
                                         <i class="fab fa-youtube text-white text-2xl"></i>
                                     </div>
                                     <div class="flex-1 min-w-0">
@@ -302,7 +302,7 @@
                         <i class="fas fa-times mr-2"></i>
                         Batal
                     </a>
-                    <button type="submit" class="btn px-6 py-2.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all">
+                    <button type="submit" class="btn px-6 py-2.5 rounded-lg text-sm font-semibold text-white bg-linear-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all">
                         <i class="fas fa-save mr-2"></i>
                         Simpan Perubahan
                     </button>
@@ -315,7 +315,7 @@
     <div class="mt-6 grid md:grid-cols-2 gap-6">
         <div class="bg-purple-50 border border-purple-100 rounded-xl p-5">
             <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-lg bg-purple-500 flex items-center justify-center flex-shrink-0">
+                <div class="w-10 h-10 rounded-lg bg-purple-500 flex items-center justify-center shrink-0">
                     <i class="fas fa-lightbulb text-white text-lg"></i>
                 </div>
                 <div>
@@ -330,7 +330,7 @@
 
         <div class="bg-orange-50 border border-orange-100 rounded-xl p-5">
             <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-lg bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <div class="w-10 h-10 rounded-lg bg-orange-500 flex items-center justify-center shrink-0">
                     <i class="fas fa-shield-alt text-white text-lg"></i>
                 </div>
                 <div>
@@ -354,7 +354,7 @@
             <p class="text-sm text-gray-600 mb-6">
                 Halaman "{{ $page['label'] }}" tidak memiliki pengaturan media yang dapat dikelola melalui admin panel.
             </p>
-            <a href="{{ route('admin.relaxation.index') }}" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium shadow-md hover:shadow-lg transition-all">
+            <a href="{{ route('admin.relaxation.index') }}" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-linear-to-r from-blue-500 to-indigo-600 text-white font-medium shadow-md hover:shadow-lg transition-all">
                 <i class="fas fa-arrow-left"></i>
                 <span>Kembali ke Dashboard</span>
             </a>

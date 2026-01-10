@@ -1,8 +1,8 @@
 {
   "version": 2,
   "framework": null,
-  "installCommand": "composer install --no-dev --optimize-autoloader --classmap-authoritative && npm ci",
-  "buildCommand": "npm run build",
+  "installCommand": "true",
+  "buildCommand": "bash vercel-build.sh",
   "builds": [
     {
       "src": "api/index.php",

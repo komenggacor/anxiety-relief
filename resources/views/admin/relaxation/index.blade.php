@@ -7,7 +7,7 @@
 
 @section('content')
 <!-- Welcome Banner -->
-<div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl shadow-lg p-8 mb-8 text-white">
+<div class="bg-linear-to-r from-blue-500 to-indigo-600 rounded-2xl shadow-lg p-8 mb-8 text-white">
     <div class="flex items-center justify-between">
         <div>
             <h1 class="text-3xl font-bold mb-2">Selamat Datang, Administrator 👋</h1>
@@ -142,7 +142,7 @@
 <!-- Info Footer -->
 <div class="mt-8 bg-blue-50 border border-blue-100 rounded-xl p-6">
     <div class="flex items-start gap-4">
-        <div class="w-10 h-10 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0">
+        <div class="w-10 h-10 rounded-lg bg-blue-500 flex items-center justify-center shrink-0">
             <i class="fas fa-info-circle text-white text-lg"></i>
         </div>
         <div>
