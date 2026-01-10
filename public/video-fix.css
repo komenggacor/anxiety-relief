@@ -1,0 +1,20 @@
+/* Responsive fix for YouTube/video aspect containers */
+.aspect-video{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+}
+.aspect-video iframe,
+.aspect-video > *{
+  width:100%;
+  height:100%;
+}
+
+/* On small screens, let the music video card stretch edge-to-edge */
+@media (max-width: 640px) {
+  .relax-video-fullwidth {
+    margin-left: -1.5rem;  /* cancel outer horizontal padding */
+    margin-right: -1.5rem;
+    border-radius: 0;
+  }
+}
