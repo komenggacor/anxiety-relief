@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Http\Request;
 use App\Http\Middleware\AdminAuthenticate;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -12,6 +13,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // Vercel runs behind a proxy; trust forwarded headers so Laravel
+        // correctly detects HTTPS and generates https:// asset URLs.
+        $middleware->trustProxies(at: '*', headers: Request::HEADER_X_FORWARDED_ALL);
+
         $middleware->alias([
             'admin.auth' => AdminAuthenticate::class,
         ]);

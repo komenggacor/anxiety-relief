@@ -720,20 +720,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Background relaxation music - autoplay on landing page
-    const bgMusic = document.getElementById('landingPageMusic');
-    if (bgMusic) {
-        const playPromise = bgMusic.play();
-        if (playPromise !== undefined) {
-            playPromise.catch(error => {
-                console.log('Autoplay blocked by browser. User interaction needed.');
-            });
-        }
-    }
 });
 </script>
-
-<!-- Background Music (Hidden Audio Player) -->
-<audio id="landingPageMusic" loop style="display: none;">
-    <source src="{{ asset('assets/relax-music.mp3') }}" type="audio/mpeg">
-</audio>
