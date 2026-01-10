@@ -10,9 +10,25 @@
       "config": {
         "maxLambdaSize": "50mb"
       }
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/style\\.css",
+      "dest": "/public/style.css"
+    },
+    {
+      "src": "/video-fix\\.css",
+      "dest": "/public/video-fix.css"
+    },
+    {
+      "src": "/script\\.js",
+      "dest": "/public/script.js"
+    },
     {
       "src": "/css/(.*)",
       "dest": "/public/css/$1"
