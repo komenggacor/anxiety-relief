@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "bash build.sh",
+  "framework": null,
+  "installCommand": "composer install --no-dev --optimize-autoloader --classmap-authoritative && npm ci",
+  "buildCommand": "npm run build",
   "builds": [
     {
       "src": "api/index.php",
-      "use": "vercel-php@0.7.1"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
+      "use": "vercel-php@0.7.1",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
     }
   ],
   "routes": [

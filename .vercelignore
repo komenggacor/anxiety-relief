@@ -1,11 +1,56 @@
-/vendor
+# Dependencies
 /node_modules
+/vendor/bin
+/vendor/laravel/sail
+/vendor/laravel/pail
+/vendor/phpunit
+/vendor/mockery
+/vendor/fakerphp
+/vendor/nunomaduro/collision
+/vendor/phar-io
+/vendor/theseer
+/vendor/sebastian
+/vendor/myclabs
+/vendor/hamcrest
+
+# Environment & Config
 .env
-.env.backup
+.env.*
+!.env.example
+
+# Testing
+/tests
 .phpunit.result.cache
+.phpunit.cache
+phpunit.xml
+
+# Development
 Homestead.json
 Homestead.yaml
+*.log
 npm-debug.log
 yarn-error.log
 /storage/*.key
-.phpunit.cache
+/.idea
+/.vscode
+/.fleet
+/.nova
+
+# Build artifacts
+/public/hot
+/public/build/manifest.json
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+DEPLOYMENT_GUIDE.md
+DEPLOY_CHEATSHEET.md
+
+# Scripts
+build.sh
+deploy.sh
+deploy.ps1
