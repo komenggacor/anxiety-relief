@@ -267,7 +267,7 @@
             </div>
 
             <!-- Principle Cards -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-12">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
                 <!-- Card 1 -->
                 <div class="feature-card group">
                     <div class="w-14 h-14 rounded-2xl bg-linear-to-br from-sage-400 to-sage-500 flex items-center justify-center mb-5 shadow-lg shadow-sage-500/20 group-hover:shadow-sage-500/30 group-hover:scale-105 transition-all duration-300">
@@ -334,7 +334,7 @@
             </div>
 
             <!-- Feature Cards Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 <!-- Musik Relaksasi -->
                 <a href="{{ url('/musik') }}" class="group block">
                     <div class="feature-card-interactive h-full">
