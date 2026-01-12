@@ -167,11 +167,6 @@
                         <i class="fas fa-mountain-sun text-amber-400/80 text-6xl animate-float"></i>
                     </div>
                 </div>
-
-                <p class="text-stone-400 text-xs mt-4 text-center">
-                    <i class="fas fa-eye mr-1"></i>
-                    Fokus pada visual di layar dan rasakan ketenangan
-                </p>
             </div>
 
             <!-- Tips -->
