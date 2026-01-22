@@ -53,9 +53,40 @@
                 <div class="flex flex-col gap-1">
                     <a href="#home" class="mobile-nav-link">Home</a>
                     <a href="#about" class="mobile-nav-link">Tentang</a>
-                    <a href="#features" class="mobile-nav-link">Fitur</a>
+
+                    <!-- Fitur Dropdown -->
+                    <div>
+                        <button id="fiturToggle" type="button" class="mobile-nav-link w-full bg-transparent border-0 text-left cursor-pointer" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+                            <span class="flex items-center gap-2">
+                                <i class="fas fa-layer-group w-5 text-sage-600"></i>
+                                <span>Fitur</span>
+                            </span>
+                            <i class="fas fa-chevron-down text-xs transition-transform" id="fiturChevron"></i>
+                        </button>
+
+                        <div id="fiturSubmenu" class="hidden ml-3 mt-0.5 pl-3 border-l border-sage-100/70 flex flex-col gap-1">
+                            <a href="{{ url('/pernapasan') }}" class="block px-3 py-2 rounded-xl text-sm font-medium text-stone-600 hover:bg-teal-50 hover:text-teal-700 transition-all flex items-center gap-2">
+                                <i class="fas fa-wind w-4 text-teal-500"></i>
+                                <span>Pernapasan 4-7-8</span>
+                            </a>
+                            <a href="{{ url('/musik') }}" class="block px-3 py-2 rounded-xl text-sm font-medium text-stone-600 hover:bg-blue-50 hover:text-blue-700 transition-all flex items-center gap-2">
+                                <i class="fas fa-music w-4 text-blue-500"></i>
+                                <span>Musik Relaksasi</span>
+                            </a>
+                            <a href="{{ url('/mindfulness') }}" class="block px-3 py-2 rounded-xl text-sm font-medium text-stone-600 hover:bg-purple-50 hover:text-purple-700 transition-all flex items-center gap-2">
+                                <i class="fas fa-spa w-4 text-purple-500"></i>
+                                <span>Mindfulness</span>
+                            </a>
+                            <a href="{{ url('/visual') }}" class="block px-3 py-2 rounded-xl text-sm font-medium text-stone-600 hover:bg-amber-50 hover:text-amber-700 transition-all flex items-center gap-2">
+                                <i class="fas fa-mountain-sun w-4 text-amber-500"></i>
+                                <span>Visual Relaksasi</span>
+                            </a>
+                        </div>
+                    </div>
+
                     <a href="#how-it-works" class="mobile-nav-link">Cara Kerja</a>
                     <a href="#benefits" class="mobile-nav-link">Manfaat</a>
+
                     <a href="#features" class="btn-primary text-center mt-3 text-sm">
                         <i class="fas fa-spa"></i>
                         Mulai Relaksasi
@@ -481,7 +512,7 @@
         <div class="absolute inset-0 bg-linear-to-b from-sage-50/30 via-transparent to-sage-50/20 -z-10"></div>
 
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-16 items-start">
 
                 <!-- Benefits Content -->
                 <div>
@@ -496,7 +527,7 @@
                         Penggunaan rutin teknik relaksasi dapat memberikan dampak signifikan pada kesejahteraan mental Anda.
                     </p>
 
-                    <div class="space-y-4">
+                    <div class="space-y-5">
                         <!-- Benefit 1 -->
                         <div class="benefit-item group">
                             <div class="w-11 h-11 rounded-xl bg-linear-to-br from-sage-100 to-sage-50 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -550,7 +581,7 @@
                         Efektivitas Penggunaan Rutin
                     </h4>
 
-                    <div class="space-y-5">
+                    <div class="space-y-6">
                         <!-- Progress 1 -->
                         <div>
                             <div class="flex justify-between mb-2">
@@ -597,7 +628,7 @@
                     </div>
 
                     <!-- Tip Box -->
-                    <div class="mt-6 p-4 rounded-xl bg-linear-to-r from-sage-50 to-cream-50 border border-sage-100">
+                    <div class="mt-8 p-4 rounded-xl bg-linear-to-r from-sage-50 to-cream-50 border border-sage-100">
                         <div class="flex items-start gap-3">
                             <div class="w-8 h-8 rounded-lg bg-sage-100 flex items-center justify-center shrink-0">
                                 <i class="fas fa-lightbulb text-sage-500 text-sm"></i>
@@ -687,38 +718,104 @@
 
 <!-- Mobile Menu Script -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
+(function() {
+    function initMobileMenu() {
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-            const icon = mobileMenuBtn.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
+        console.log('Homepage Mobile Menu Init:', { mobileMenuBtn, mobileMenu });
+
+        if (mobileMenuBtn && mobileMenu) {
+            // Remove any existing listeners by cloning
+            const newBtn = mobileMenuBtn.cloneNode(true);
+            mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+
+            newBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                console.log('Homepage menu button clicked');
+                mobileMenu.classList.toggle('hidden');
+
+                const icon = newBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+
+            // Close menu when clicking links
+            document.querySelectorAll('#mobileMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    const icon = newBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                });
+            });
+
+            console.log('Homepage mobile menu initialized successfully');
+        } else {
+            console.error('Homepage mobile menu elements not found:', {
+                btnFound: !!mobileMenuBtn,
+                menuFound: !!mobileMenu
+            });
+        }
+    }
+
+    // Fitur Dropdown Toggle
+    function initFiturDropdown() {
+        const fiturToggle = document.getElementById('fiturToggle');
+        const fiturSubmenu = document.getElementById('fiturSubmenu');
+        const fiturChevron = document.getElementById('fiturChevron');
+
+        if (fiturToggle && fiturSubmenu && fiturChevron) {
+            if (fiturToggle.dataset.bound === '1') return;
+            fiturToggle.dataset.bound = '1';
+
+            fiturToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                fiturSubmenu.classList.toggle('hidden');
+                fiturChevron.classList.toggle('rotate-180');
+            });
+        }
+    }
+
+    // Smooth scroll for anchor links
+    function initSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
         });
     }
 
-    document.querySelectorAll('#mobileMenu a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            const icon = mobileMenuBtn.querySelector('i');
-            icon.classList.add('fa-bars');
-            icon.classList.remove('fa-times');
+    // Try multiple initialization methods
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            initMobileMenu();
+            initFiturDropdown();
+            initSmoothScroll();
         });
-    });
+    } else {
+        initMobileMenu();
+        initFiturDropdown();
+        initSmoothScroll();
+    }
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
-
-});
+    // Fallback: try again after a short delay
+    setTimeout(function() {
+        initMobileMenu();
+        initFiturDropdown();
+        initSmoothScroll();
+    }, 100);
+})();
 </script>
